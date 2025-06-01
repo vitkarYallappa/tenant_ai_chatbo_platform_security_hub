@@ -1,0 +1,69 @@
+# Core FastAPI and ASGI
+fastapi==0.104.1                        # ✅ Python 3.12 compatible
+uvicorn[standard]==0.24.0.post1         # ✅ OK
+pydantic==2.4.2                         # ✅ Use v2+ for FastAPI 0.104+
+pydantic-settings==2.0.3                # ✅ Compatible with pydantic v2
+
+# Database drivers
+redis==5.0.1                            # ✅ OK
+asyncpg==0.30.0                         # 🔼 FIXED: 0.28.2 does not exist — latest is 0.30.0
+SQLAlchemy==2.0.16
+sqlalchemy-utils==0.41.1
+alembic==1.13.1  # Database migrations
+
+# Redis dependencies
+redis[hiredis]==5.0.1
+
+# Authentication and Security
+bcrypt==4.1.2
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# Input validation and sanitization
+email-validator==2.1.0
+bleach==6.1.0
+phonenumbers==8.13.26
+
+# HTTP client and networking
+httpx==0.25.2
+python-dotenv==1.0.0
+
+# Monitoring and observability
+psutil==5.9.6  # System metrics
+
+# Development and testing dependencies
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.2  # For testing HTTP endpoints
+
+# Linting and formatting
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Documentation
+#mkdocs==1.5.3
+#mkdocs-material==9.4.8
+
+# Logging and configuration
+structlog==23.2.0
+rich==13.7.0  # Rich console output for development
+
+# Date and time handling
+python-dateutil==2.8.2
+
+# JSON handling
+orjson==3.9.10  # Fast JSON serialization
+
+# Environment and configuration
+python-decouple==3.8
+
+# Security headers and middleware
+python-multipart==0.0.6
+
+# Additional utilities
+click==8.1.7  # CLI support
+typer==0.9.0  # Modern CLI framework

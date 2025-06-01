@@ -1,0 +1,64 @@
+# Development Dependencies for Security Hub
+# Include production requirements
+-r requirements.txt
+
+# Code Quality and Linting
+black==23.11.0                    # Code formatter
+isort==5.12.0                     # Import sorter
+flake8==6.1.0                     # Linting
+flake8-docstrings==1.7.0          # Docstring linting
+flake8-bugbear==23.11.28          # Additional flake8 rules
+flake8-import-order==0.18.2       # Import order checking
+bandit==1.7.5                     # Security linting
+
+# Type Checking
+mypy==1.7.1                       # Static type checker
+types-redis==4.6.0.11             # Type stubs for Redis
+#types-passlib==1.7.7.14           # Type stubs for Passlib
+types-python-dateutil==2.8.19.14  # Type stubs for dateutil
+
+# Development Tools
+pre-commit==3.6.0                 # Git hooks framework
+commitizen==3.13.0                # Conventional commits
+bumpversion==0.6.0                # Version bumping
+
+# Documentation
+mkdocs==1.5.3                     # Documentation generator
+mkdocs-material==9.4.8            # Material theme for MkDocs
+mkdocs-mermaid2-plugin==1.1.1     # Mermaid diagrams
+mkapi==2.0.5                      # API documentation from docstrings
+
+# Database Tools
+pgcli==4.0.1                      # PostgreSQL CLI with autocomplete
+#redis-cli==5.0.1                  # Redis CLI tools
+
+# Debugging and Profiling
+ipdb==0.13.13                     # Enhanced debugger
+memory-profiler==0.61.0           # Memory usage profiling
+py-spy==0.3.14                    # Sampling profiler
+
+# Environment and Configuration
+python-dotenv==1.0.0              # Environment variable loading
+dynaconf==3.2.4                   # Advanced configuration management
+
+# Development Server Enhancements
+watchdog==3.0.0                   # File system event monitoring
+rich==13.7.0                      # Rich console output
+
+# Security Analysis
+#safety==2.3.5                     # Check for known security vulnerabilities
+semgrep==1.45.0                   # Static analysis security scanner
+
+# Performance Testing
+locust==2.17.0                    # Load testing framework
+
+# API Development
+httpie==3.2.2                     # Command line HTTP client
+
+# Jupyter for experimentation
+jupyter==1.0.0                    # Jupyter notebook
+ipykernel==6.26.0                 # IPython kernel for Jupyter
+
+# Development utilities
+better-exceptions==0.3.3          # Better exception formatting
+devtools==0.12.2                  # Development utilities

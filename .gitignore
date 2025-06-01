@@ -1,0 +1,434 @@
+# Security Hub .gitignore
+
+# =============================================================================
+# Python
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.coverage_html/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# =============================================================================
+# IDEs and Editors
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# Operating System
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Security Hub Specific
+# =============================================================================
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+
+# Configuration files with secrets
+config/secrets.yaml
+config/secrets.yml
+config/production.yaml
+config/production.yml
+
+# Log files
+logs/
+*.log
+*.log.*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Key files
+*.key
+*.pem
+*.p12
+*.pfx
+private_keys/
+certificates/
+
+# Backup files
+backups/
+*.backup
+*.bak
+*.sql.gz
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Cache directories
+.cache/
+cache/
+
+# =============================================================================
+# Docker
+# =============================================================================
+
+# Docker files
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+
+# =============================================================================
+# Cloud and Infrastructure
+# =============================================================================
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+
+# Kubernetes secrets
+secrets.yaml
+secrets.yml
+
+# Helm
+charts/*.tgz
+
+# =============================================================================
+# Monitoring and Observability
+# =============================================================================
+
+# Prometheus data
+prometheus_data/
+
+# Grafana data
+grafana_data/
+
+# Jaeger data
+jaeger_data/
+
+# =============================================================================
+# Development Tools
+# =============================================================================
+
+# Profiling output
+*.prof
+*.pprof
+
+# Coverage reports
+.coverage_html/
+coverage_html/
+
+# Benchmark results
+benchmark_results/
+
+# Performance logs
+perf.data
+perf.data.old
+
+# =============================================================================
+# Package Managers
+# =============================================================================
+
+# pip
+pip-wheel-metadata/
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+# =============================================================================
+# CI/CD
+# =============================================================================
+
+# GitHub Actions
+.github/workflows/local_*
+
+# Jenkins
+.jenkins/
+
+# Build artifacts
+build_artifacts/
+dist_artifacts/
+
+# =============================================================================
+# Security and Compliance
+# =============================================================================
+
+# Security scan results
+security_scan_results/
+vulnerability_reports/
+bandit_reports/
+
+# Compliance reports
+compliance_reports/
+
+# Audit logs (if stored locally)
+audit_logs/
+
+# =============================================================================
+# Testing
+# =============================================================================
+
+# Test artifacts
+test_artifacts/
+test_results/
+test_reports/
+
+# Performance test results
+performance_test_results/
+
+# Load test results
+load_test_results/
+
+# =============================================================================
+# Documentation
+# =============================================================================
+
+# Generated documentation
+docs/_build/
+docs/build/
+
+# API documentation
+api_docs/
+
+# =============================================================================
+# Local Development
+# =============================================================================
+
+# Local development scripts
+local_dev/
+dev_scripts/
+
+# Local configuration overrides
+local_config/
+
+# Development databases
+dev.db
+development.db
+
+# Local SSL certificates
+ssl/
+certs/
+
+# Local data files
+data/
+sample_data/
+
+# =============================================================================
+# Miscellaneous
+# =============================================================================
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+
+# Compiled binaries
+*.exe
+*.dll
+
+# Lock files
+*.lock
+
+# Node.js (if using for frontend tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ruby (if using for tools)
+Gemfile.lock
+
+# Go (if using for tools)
+go.mod
+go.sum
